@@ -11,7 +11,7 @@ function Navbar() {
 
   return (
   <nav
-    className = {`${styles.paddingX} w-full flex items-center fixed top-0 z-20 backdrop-blur-md bg-gradient-to-b from-white/10 to-white/0`}>
+    className = {`${styles.paddingX} w-full flex items-center fixed top-0 z-20 backdrop-blur backdrop-filter bg-gradient-to-b from-white/30 to-transparent`}>
       <div className = "w-full flex justify-between items-center max-w-7xl mx-auto">
        <div className='flex items-center gap-3'>
        <Link
