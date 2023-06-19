@@ -41,6 +41,11 @@
   );
 }
 
+.glow-effect {
+  text-shadow: 0 0 10px purple;
+  transition: box-shadow 0.3s ease;
+}
+
 .green-pink-gradient {
   background: "#00cea8";
   background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
