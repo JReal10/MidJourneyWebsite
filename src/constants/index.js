@@ -33,6 +33,7 @@ const service = [
     image: image1,
     icon: icon1,
     source_code_link: "",
+    buttonDesc: "Join Discord"
   },
   {
     name: "Getting Started",
@@ -42,6 +43,7 @@ const service = [
     image: image2,
     icon: icon2,
     source_code_link: "",
+    buttonDesc: "Explore Now",
   },
   {
     name: "User Guide",
@@ -51,6 +53,7 @@ const service = [
     image: image3,
     icon: icon3,
     source_code_link: "",
+    buttonDesc: "View Documents"
   }
 ];
 

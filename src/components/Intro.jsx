@@ -6,25 +6,27 @@ import { service } from '../constants';
 import sectionWrapper from '../hoc/sectionWrapper';
 
 function Intro() {
-  const ProjectCard = ({ index, name, description, image, icon, source_code_link }) => {
+  const ProjectCard = ({ index, name, description, image, icon,buttonDesc}) => {
     return (
       <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
-        <div className="bg-tertiary  rounded-sm sm:w-[360px] w-full rounded-xl shadow-inner">
+        <div className=" bg-gradient-to-t from-white/30 from-5% to-gradient2 backdrop-blur backdrop-filter rounded-sm sm:w-[360px] w-full rounded-xl shadow-inner">
           <div className="relative w-full h-[230px]">
             <img src={image} alt={name} className="w-full h-full object-cover rounded-xl" />
             <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-              <div
-                onClick={() => window.open(source_code_link, '_blank')}
-                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              <img src = {icon} alt = {name} 
+                className="w-24 h-24 rounded-full flex justify-center items-center"
               >
-              </div>
+              </img>
             </div>
           </div>
-          <div className="p-5">
-            <h3>
+          <div className="p-5 flex flex-col items-center">
+            <h3> 
               <h3 className="text-white font-bold text-[24px]">{name}</h3>
-              <p>{description}</p>
+              <p className='text-white/50'>{description}</p>
             </h3>
+            <button class="bg-black drop-shadow-xl shadow-black mt-4 mb-1 bg-opacity-40 hover:bg-opacity-70 text-white px-4 py-2 rounded-xl">
+              {buttonDesc}
+            </button>
           </div>
         </div>
       </motion.div>

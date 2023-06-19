@@ -29,9 +29,7 @@ function Navbar() {
           <li
             key = {Link.id}
             className={`${
-              active === Link.title ? "text-pink" : "text-white"
-            } hover:text-pink text-[18x] font-Medium curosor-pointer ${
-              Link.id === "signup" ? "text-white py-1.5 px-3 rounded-xl border-b-2 border-violet-700 bg-gradient-radial from-white/0 via-white/10 to-heroButton  hover:from-white/0 hover:via-heroButton hover:to-heroButton" : "" 
+              active === Link.title ? "text-white glow-effect" : "text-white"
             }`} 
             onClick = {()=> setActive(Link.title)}>
               
